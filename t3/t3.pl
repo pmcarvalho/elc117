@@ -14,3 +14,13 @@ has5(L) :-
 
 hasN(L,N):-
     length(L,N).
+
+%4. Defina um predicado potN0(N,L), de forma que L seja uma lista de potências de 2, com expoentes de N a 0.
+
+potN0(0,[1]).
+potN0(N,L) :- 
+    N > 0,
+    X is 2^N,
+    L = [X|T],
+    N1 is N-1,
+    potN0(N1,T).
