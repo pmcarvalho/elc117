@@ -36,3 +36,9 @@ zipmult(L1,L2,L3) :-
     zipmult(T1,T2,T),
     L3 = [H|T].
 
+%6. Defina um predicado potencias(N,L), de forma que L seja uma lista com as N primeiras potências de 2,
+% sendo a primeira 2^0 e assim por diante.
+
+potencias(N,L) :-
+    potN0(N,L1),
+    reverse(L1,L).
