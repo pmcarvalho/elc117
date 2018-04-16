@@ -42,3 +42,13 @@ zipmult(L1,L2,L3) :-
 potencias(N,L) :-
     potN0(N,L1),
     reverse(L1,L).
+
+%7. Defina um predicado positivos(L1,L2),
+% de forma que L2 seja uma lista só com os elementos positivos de L1.
+    
+positivos([],[]).
+positivos([H|T],L2) :- 
+    H > 0,
+    L2 = [H|X],
+    positivos(T,X);
+    positivos(T,L2).
