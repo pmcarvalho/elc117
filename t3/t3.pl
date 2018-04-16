@@ -24,3 +24,15 @@ potN0(N,L) :-
     L = [X|T],
     N1 is N-1,
     potN0(N1,T).
+
+%5. Defina um predicado zipmult(L1,L2,L3), de forma que cada elemento da lista L3 seja o produto dos elementos 
+%de L1 e L2 na mesma posição do elemento de L3.
+
+zipmult([],[],[]).
+zipmult(L1,L2,L3) :-
+    L1 = [H1|T1],
+    L2 = [H2|T2],
+    H is H1*H2,
+    zipmult(T1,T2,T),
+    L3 = [H|T].
+
