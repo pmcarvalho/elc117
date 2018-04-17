@@ -64,11 +64,9 @@ mesmaPosicao(A,L1,L2) :-
     H2 = A;
     mesmaPosicao(A,T1,T2).
 
-%10. Tem-se N azulejos 10cm x 10cm e, com eles, deve-se montar um conjunto
-% de quadrados de modo a utilizar todos os azulejos dados, sem sobrepô-los.
-%  Inicialmente, deve-se montar o maior quadrado possível; então, com os azulejos
-%   que sobraram, deve-se montar o maior quadrado possível, e assim
-%    sucessivamente.
+%10. Tem-se N azulejos 10cm x 10cm e, com eles, deve-se montar um conjunto de quadrados de modo a utilizar todos
+% os azulejos dados, sem sobrepô-los.  Inicialmente, deve-se montar o maior quadrado possível; então, com os azulejos
+% que sobraram, deve-se montar o maior quadrado possível, e assim sucessivamente.
 
 azulejos(0,0).
 azulejos(NA, NQ) :-
