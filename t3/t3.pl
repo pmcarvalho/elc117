@@ -52,3 +52,15 @@ positivos([H|T],L2) :-
     L2 = [H|X],
     positivos(T,X);
     positivos(T,L2).
+
+%8. Considere que L1 e L2 sejam permutações de uma lista de elementos distintos, sem repetições. 
+%Sabendo disso, defina um predicado mesmaPosicao(A,L1,L2) para verificar 
+%se um elemento A está na mesma posição nas listas L1 e L2.
+
+mesmaPosicao(A,L1,L2) :-
+    L1 = [H1|T1],
+    L2 = [H2|T2],
+    H1 = A,
+    H2 = A;
+    mesmaPosicao(A,T1,T2).
+
