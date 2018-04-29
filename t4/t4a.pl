@@ -1,3 +1,4 @@
+% CD Independente
 % Uma banda formada por alunos e alunas da escola está gravando um CD com exatamente sete músicas
 % distintas – S, T, V, W, X, Y e Z. Cada música ocupa exatamente uma das sete faixas contidas no
 % CD. Algumas das músicas são sucessos antigos de rock; outras são composições da própria banda. As
